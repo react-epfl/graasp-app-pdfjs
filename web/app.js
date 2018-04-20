@@ -1403,7 +1403,10 @@ let PDFViewerApplication = {
 let validateFileURL;
 if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
   const HOSTED_VIEWER_ORIGINS = ['null',
-    'http://mozilla.github.io', 'https://mozilla.github.io'];
+    'http://mozilla.github.io', 'https://mozilla.github.io',
+    'http://apps.graasp.eu', 'https://apps.graasp.eu',
+    'http://pdfjs.graasp.eu', 'https://pdfjs.graasp.eu'
+  ];
   validateFileURL = function validateFileURL(file) {
     if (file === undefined) {
       return;
@@ -1635,7 +1638,8 @@ if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
     }
 
     if (file) {
-      PDFViewerApplication.open(file);
+      var parameters = { withCredentials: true };
+      PDFViewerApplication.open(file, parameters);
     }
   };
 } else if (PDFJSDev.test('FIREFOX || MOZCENTRAL || CHROME')) {
