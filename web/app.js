@@ -1750,6 +1750,10 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
     "null",
     "http://mozilla.github.io",
     "https://mozilla.github.io",
+    "http://apps.graasp.eu",
+    "https://apps.graasp.eu",
+    "http://pdfjs.graasp.eu",
+    "https://pdfjs.graasp.eu",
   ];
   validateFileURL = function(file) {
     if (file === undefined) {
@@ -1944,7 +1948,8 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
     }
 
     if (file) {
-      PDFViewerApplication.open(file);
+      var parameters = { withCredentials: true };
+      PDFViewerApplication.open(file, parameters);
     }
   };
 } else if (PDFJSDev.test("MOZCENTRAL || CHROME")) {
