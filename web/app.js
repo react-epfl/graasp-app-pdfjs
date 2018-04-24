@@ -1405,7 +1405,9 @@ if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
   const HOSTED_VIEWER_ORIGINS = ['null',
     'http://mozilla.github.io', 'https://mozilla.github.io',
     'http://apps.graasp.eu', 'https://apps.graasp.eu',
-    'http://pdfjs.graasp.eu', 'https://pdfjs.graasp.eu'
+    'http://apps.dev.graasp.eu', 'https://apps.dev.graasp.eu',
+    'http://viewer.graasp.eu', 'https://viewer.graasp.eu',
+    'http://viewer.dev.graasp.eu', 'https://viewer.dev.graasp.eu'
   ];
   validateFileURL = function validateFileURL(file) {
     if (file === undefined) {
