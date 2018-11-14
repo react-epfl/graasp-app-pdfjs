@@ -1758,18 +1758,10 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
     "https://viewer.graasp.eu",
     "http://viewer.dev.graasp.eu",
     "https://viewer.dev.graasp.eu",
-    "http://graasp-users.api.dev.graasp.eu",
-    "https://graasp-users.api.dev.graasp.eu",
-    "http://light-users.api.dev.graasp.eu",
-    "https://light-users.api.dev.graasp.eu",
-    "http://api.dev.graasp.eu",
-    "https://api.dev.graasp.eu",
-    "http://graasp-users.api.graasp.eu",
-    "https://graasp-users.api.graasp.eu",
-    "http://light-users.api.graasp.eu",
-    "https://light-users.api.graasp.eu",
-    "http://api.graasp.eu",
-    "https://api.graasp.eu",
+    "http://cloud.graasp.eu",
+    "https://cloud.graasp.eu",
+    "http://cloud.dev.graasp.eu",
+    "https://cloud.dev.graasp.eu",
   ];
   validateFileURL = function(file) {
     if (file === undefined) {
