@@ -1402,14 +1402,22 @@ let PDFViewerApplication = {
 
 let validateFileURL;
 if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
-  const HOSTED_VIEWER_ORIGINS = ['null',
-    'http://mozilla.github.io', 'https://mozilla.github.io',
-    'http://apps.graasp.eu', 'https://apps.graasp.eu',
-    'http://apps.dev.graasp.eu', 'https://apps.dev.graasp.eu',
-    'http://viewer.graasp.eu', 'https://viewer.graasp.eu',
-    'http://viewer.dev.graasp.eu', 'https://viewer.dev.graasp.eu',
-    'http://cloud.graasp.eu', 'https://cloud.graasp.eu',
-    'http://cloud.dev.graasp.eu', 'https://cloud.dev.graasp.eu',
+  const HOSTED_VIEWER_ORIGINS = [
+    'null',
+    'http://mozilla.github.io',
+    'https://mozilla.github.io',
+    'http://apps.graasp.eu',
+    'https://apps.graasp.eu',
+    'http://apps.dev.graasp.eu',
+    'https://apps.dev.graasp.eu',
+    'http://viewer.graasp.eu',
+    'https://viewer.graasp.eu',
+    'http://viewer.dev.graasp.eu',
+    'https://viewer.dev.graasp.eu',
+    'http://cloud.graasp.eu',
+    'https://cloud.graasp.eu',
+    'http://cloud.dev.graasp.eu',
+    'https://cloud.dev.graasp.eu',
   ];
   validateFileURL = function validateFileURL(file) {
     if (file === undefined) {
@@ -1642,7 +1650,9 @@ if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC')) {
     }
 
     if (file) {
-      var parameters = { withCredentials: true };
+      var parameters = {
+        withCredentials: true,
+      };
       PDFViewerApplication.open(file, parameters);
     }
   };
