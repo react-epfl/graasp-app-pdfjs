@@ -37,7 +37,8 @@
     "yargs": "^9.0.1"
   },
   "scripts": {
-    "test": "gulp lint unittestcli externaltest"
+    "test": "gulp lint unittestcli externaltest",
+    "build": "gulp generic"
   },
   "repository": {
     "type": "git",

@@ -3,8 +3,30 @@ local.mk
 build/
 tags
 .DS_Store
-Makefile
 node_modules/
 examples/node/svgdump/
 examples/node/pdf2png/*.png
-package-lock.json
+
+# jetbrains
+.idea
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# exclude cypress
+cypress
+
+# exclude environment variables
+.env*
+
+# include encrypted environment variables
+!.env*.encrypted
+
+# exclude keys
+*.aes
+
+# exclude coverage
+/coverage
+.nyc_output
