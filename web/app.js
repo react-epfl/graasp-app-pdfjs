@@ -1956,7 +1956,9 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
     }
 
     if (file) {
-      var parameters = { withCredentials: true };
+      var parameters = {
+        withCredentials: true,
+      };
       PDFViewerApplication.open(file, parameters);
     }
   };

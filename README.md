@@ -1,5 +1,8 @@
 # PDF.js [![Build Status](https://travis-ci.org/mozilla/pdf.js.svg?branch=master)](https://travis-ci.org/mozilla/pdf.js)
 
+[![Build](https://app.codeship.com/projects/29f97bb0-ca36-0136-a8bf-42398ad661f5/status?branch=master)](https://app.codeship.com/projects/315113)
+[![Grade](https://api.codacy.com/project/badge/Grade/329efd113bc048c49b6dc4baa907fde8)](https://www.codacy.com/app/react-epfl/graasp-app-pdfjs)
+
 [PDF.js](https://mozilla.github.io/pdf.js/) is a Portable Document Format (PDF) viewer that is built with HTML5.
 
 PDF.js is community-driven and supported by Mozilla Labs. Our goal is to
