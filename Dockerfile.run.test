@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:8.12.0
+FROM mhart/alpine-node:12.16.2
 
 # add bash
 RUN apk add --update bash
