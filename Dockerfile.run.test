@@ -1,7 +1,17 @@
-FROM mhart/alpine-node:12.16.2
+FROM mhart/alpine-node:12
 
-# add bash
-RUN apk add --update bash
+# add missing dependencies
+RUN apk update \
+    && apk add bash \
+    && apk add --no-cache --virtual testrun \
+        make \
+        g++ \
+        pango-dev \
+        cairo-dev \
+        pixman-dev \
+        pkgconf \
+        libjpeg-turbo-dev \
+        python
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
